@@ -1,0 +1,143 @@
+.header {
+  background: linear-gradient(135deg, #007bff, #00bfff); /* Gradiente azul moderno */
+  color: #ffffff; /* Cor do texto */
+  padding: 40px 20px; /* Espaçamento interno */
+  text-align: center; /* Centraliza o conteúdo */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+}
+
+.header-content {
+  max-width: 1200px; /* Largura máxima do conteúdo */
+  margin: 0 auto; /* Centraliza o conteúdo */
+}
+
+.header-title {
+  font-family: 'Poppins', sans-serif; /* Fonte moderna */
+  font-size: 3rem; /* Tamanho grande para o título */
+  font-weight: 700; /* Negrito */
+  margin: 0; /* Remove margem padrão */
+  letter-spacing: 2px; /* Espaçamento entre letras */
+  text-transform: uppercase; /* Texto em caixa alta */
+}
+
+.header-subtitle {
+  font-family: 'Poppins', sans-serif; /* Fonte moderna */
+  font-size: 1.2rem; /* Tamanho do subtítulo */
+  font-weight: 300; /* Peso mais leve */
+  margin: 10px 0 0; /* Espaçamento acima do subtítulo */
+  opacity: 0.9; /* Leve transparência */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .header-title {
+    font-size: 2rem; /* Tamanho menor em telas pequenas */
+  }
+
+  .header-subtitle {
+    font-size: 1rem; /* Tamanho menor em telas pequenas */
+  }
+}
+
+body {
+  font-family: 'Poppins', Arial, sans-serif; /* Fonte moderna */
+  margin: 0;
+  padding: 0;
+  background-color: #f8f9fa; /* Cor de fundo mais suave */
+  color: #333; /* Cor do texto principal */
+}
+
+.container {
+  display: flex;               /* Usando flexbox para alinhamento interno */
+  flex-direction: column;      /* Organiza os itens em coluna */
+  max-width: 1200px;           /* Largura máxima para telas grandes */
+  width: 90%;                  /* Largura responsiva */
+  margin: 40px auto;           /* Centraliza o container */
+  padding: 40px;               /* Espaçamento interno maior */
+  background-color: #ffffff;   /* Fundo branco */
+  border-radius: 16px;         /* Cantos mais arredondados */
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1); /* Sombra mais pronunciada */
+  gap: 30px;                   /* Espaçamento entre elementos internos */
+}
+
+.map {
+  height: 500px;               /* Altura maior para o mapa */
+  width: 100%;                 /* Largura total */
+  margin-top: 20px;
+  border-radius: 12px;         /* Cantos arredondados */
+  overflow: hidden;            /* Garante que o mapa não ultrapasse os limites */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+Form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;                   /* Espaçamento entre os campos do formulário */
+  background-color: #ffffff;   /* Fundo branco */
+  padding: 30px;               /* Espaçamento interno */
+  border-radius: 12px;         /* Cantos arredondados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+Form input {
+  padding: 12px;               /* Espaçamento interno nos inputs */
+  border: 1px solid #e0e0e0;   /* Borda sutil */
+  border-radius: 8px;          /* Cantos arredondados */
+  font-size: 16px;             /* Tamanho da fonte */
+  outline: none;               /* Remove o contorno padrão */
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; /* Transição suave */
+}
+
+Form input:focus {
+  border-color: #007bff;       /* Cor da borda ao focar */
+  box-shadow: 0 0 8px rgba(0, 123, 255, 0.2); /* Sombra ao focar */
+}
+
+Form button {
+  padding: 12px 20px;          /* Espaçamento interno no botão */
+  background-color: #267fde;   /* Cor de fundo azul */
+  color: #ffffff;              /* Cor do texto */
+  border: none;                /* Remove a borda */
+  border-radius: 8px;          /* Cantos arredondados */
+  font-size: 16px;             /* Tamanho da fonte */
+  cursor: pointer;             /* Cursor de ponteiro */
+  transition: background-color 0.3s ease; /* Transição suave */
+}
+
+Form button:hover {
+  background-color: #0056b3;   /* Cor de fundo ao passar o mouse */
+}
+
+/* Estilo para o resultado */
+.result {
+  background-color: #f8f9fa;   /* Cor de fundo suave */
+  padding: 20px;               /* Espaçamento interno */
+  border-radius: 12px;         /* Cantos arredondados */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+.result h2 {
+  margin-top: 0;               /* Remove margem superior */
+  color: #007bff;              /* Cor do título */
+}
+
+.result p {
+  margin: 10px 0;              /* Espaçamento entre parágrafos */
+  font-size: 16px;             /* Tamanho da fonte */
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container {
+    padding: 20px;             /* Espaçamento menor em telas pequenas */
+    gap: 20px;                 /* Espaçamento menor entre elementos */
+  }
+
+  .map {
+    height: 300px;             /* Altura menor para o mapa em telas pequenas */
+  }
+
+  Form {
+    padding: 20px;             /* Espaçamento menor no formulário */
+  }
+}

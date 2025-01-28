@@ -1,0 +1,23 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", serif;
+
+}
+
+
+body{
+  min-height: 100vh;
+  width:  100vw;
+  background: linear-gradient(180deg, #e3e1f5 0%, rgba(222, 222, 243, 0.8)100%); 
+
+  
+}
+
+input::placeholder {
+  color: #888; /* Cor do texto guia (placeholder) */
+  font-style: italic; /* Deixa o texto guia em itálico */
+  padding-left: 5px;
+  stroke: none;
+}
