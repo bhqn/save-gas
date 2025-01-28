@@ -1,16 +1,16 @@
 import React from "react";
 import Home from "./home"; // Importe o componente Home
+import Header from "./header";
+import Footer from "./footer";
 
 const App = () => {
   return (
     <div>
-     <header className="header">
-  <div className="header-content">
-    <h1 className="header-title">SaveGas</h1>
-    <p className="header-subtitle">Economize combustível, salve o planeta.</p>
-  </div>
-</header>
+   
+      <Header/>
       <Home />
+      <Footer/>
+     
     </div>
   );
 };
