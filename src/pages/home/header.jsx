@@ -7,6 +7,7 @@ const Header = () => {
         <h1 className="header-title">SaveGas</h1>
         <p className="header-subtitle">Economize combustível, salve o planeta.</p>
       </div>
+    
     </header>
   );
 };

@@ -5,6 +5,8 @@ import "leaflet/dist/leaflet.css"; // Importe o CSS do Leaflet
 import L from "leaflet"; // Importe o Leaflet
 
 const Home = () => {
+
+  
   const [result, setResult] = useState(null);
 
   const handleFormSubmit = (data) => {
@@ -45,10 +47,10 @@ const Home = () => {
         </div>
       )}
 
-      <div id="map" className="map"></div>
+<div id="map" style={{ height: '500px', width: '100%' }}></div>
 
       <div>
-        
+      
       </div>
     </div>
   );
